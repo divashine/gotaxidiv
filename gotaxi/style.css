@@ -1,0 +1,161 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.carousel .carousel-indicators button{
+   width: 10px;
+   height: 10px;
+   border-radius: 100%;
+}
+.card{
+    min-height: 450px;
+}
+.check button:hover{
+    text-decoration: underline;
+}
+ul li:hover{
+    text-decoration: underline;
+    color: green;
+}
+#btnhover:hover{
+    background: #17BAD1 !important;
+    color: #F3F7FF !important; 
+}
+.group-buttonbox button:hover{
+    background: #17BAD1 !important;
+    color: #17BAD1;
+}
+.btn-info{
+    box-shadow: 0 0 12px #8EDBEA;
+    background-color: #15AEC3;
+}
+/* day and night traslate bg */
+.scene{
+    position: relative;
+    height: 80vh;
+    overflow-x: hidden;
+    background: black;
+}
+
+.bg{
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    height: 250px;
+    background: url(./gotaxi/ilustrasion-scene.png);
+    animation: animateBg 25s linear infinite;
+    background-size: 1500px;
+    background-repeat: repeat-x;
+}
+@keyframes animateBg {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: -1500px;
+    }
+}
+.mride1{
+    position: absolute;
+    left: -200px;
+    bottom: -20px;
+    max-width: 200px;
+    z-index: 13;
+    animation: mride1 6s linear infinite;
+}
+@keyframes mride1 {
+    0%{
+        transform: translateX(0px);
+    }
+    90%,100%{
+        transform: translateX(calc(100vw + 200px));
+    }
+}
+
+.mride2{
+    position: absolute;
+    right: -200px;
+    bottom: -5px;
+    max-width: 200px;
+    z-index: 10;
+    animation: mride2 8s linear infinite;
+    
+}
+@keyframes mride2 {
+    0%{
+        transform: translateX(0px);
+    }
+    90%,100%{
+        transform: translateX(calc(-100vw - 200px));
+    }
+}
+.mride3{
+    position: absolute;
+    left: -200px;
+    bottom: -20px;
+    max-width: 200px;
+    z-index: 14;
+    animation: mride3 8s linear infinite;
+}
+@keyframes mride3 {
+    0%{
+        transform: translateX(0px);
+    }
+    90%,100%{
+        transform: translateX(calc(100vw + 200px));
+    }
+}
+
+.mride4{
+    position: absolute;
+    right: -200px;
+    bottom: -5px;
+    max-width: 200px;
+    z-index: 11;
+    animation: mride4 5s linear infinite;
+    
+}
+@keyframes mride4 {
+    0%{
+        transform: translateX(0px);
+    }
+    90%,100%{
+        transform: translateX(calc(-100vw - 200px));
+    }
+}
+.mride5{
+    position: absolute;
+    left: -200px;
+    bottom: -20px;
+    max-width: 200px;
+    z-index: 15;
+    animation: mride5 10s linear infinite;
+}
+@keyframes mride5 {
+    0%{
+        transform: translateX(0px);
+    }
+    90%,100%{
+        transform: translateX(calc(100vw + 200px));
+    }
+}
+
+.mride6{
+    position: absolute;
+    right: -200px;
+    bottom: -5px;
+    max-width: 200px;
+    z-index: 12;
+    animation: mride6 4s linear infinite;
+    
+}
+@keyframes mride6 {
+    0%{
+        transform: translateX(0px);
+    }
+    90%,100%{
+        transform: translateX(calc(-100vw - 200px));
+    }
+}
